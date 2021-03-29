@@ -227,7 +227,10 @@ const renderStudents = () => {
                    src="https://user-images.githubusercontent.com/13679693/112739384-4fa31c00-8f74-11eb-97c4-23b91bac3a4e.PNG"
                    />
                    <Divider>
-                    <a target="_blank" href="https://www.linkedin.com/in/tapiwazireva/">
+                    <a
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/tapiwazireva/">
                         Check me layout
                      </a>
                    </Divider>
