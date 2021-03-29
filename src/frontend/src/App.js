@@ -231,7 +231,7 @@ const renderStudents = () => {
                     rel="noopener noreferrer"
                     target="_blank"
                     href="https://www.linkedin.com/in/tapiwazireva/">
-                        Check out my profile
+                        my profile
                      </a>
                    </Divider>
                    </Footer>
