@@ -13,7 +13,9 @@ Breadcrumb,
  Tag,
  Avatar,
  Radio,
- Popconfirm
+ Popconfirm,
+ Image,
+ Divider
  } from 'antd';
 
 import {
@@ -179,7 +181,7 @@ const renderStudents = () => {
                     pagination={{ pageSize: 50 }}
                     scroll={{ y: 300 }}
                     rowKey={(student) => student.id}
-                    />;
+                    />
                     </>
             }
 
@@ -218,7 +220,21 @@ const renderStudents = () => {
                        {renderStudents()}
                      </div>
                    </Content>
-                   <Footer style={{ textAlign: 'center' }}>By Tarenda</Footer>
+                   <Footer style={{ textAlign: 'center' }}>
+                   <Image
+                   width={75}
+                   style={{borderRadius: 5}}
+                   src="https://user-images.githubusercontent.com/13679693/112739384-4fa31c00-8f74-11eb-97c4-23b91bac3a4e.PNG"
+                   />
+                   <Divider>
+                    <a
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/tapiwazireva/">
+                        Check me layout
+                     </a>
+                   </Divider>
+                   </Footer>
                  </Layout>
                </Layout>
 }
