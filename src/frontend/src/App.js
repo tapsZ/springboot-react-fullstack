@@ -224,7 +224,7 @@ const renderStudents = () => {
                    <Image
                    width={75}
                    style={{borderRadius: 5}}
-                   src="https://user-images.githubusercontent.com/13679693/112842409-cee23e00-90a1-11eb-9af8-e47c18fbbc41.PNG"
+                   src="https://user-images.githubusercontent.com/13679693/113361827-2952f700-934d-11eb-846e-2f72bbf95f13.PNG"
                    />
                    <Divider>
                     <a
