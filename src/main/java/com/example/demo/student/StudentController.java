@@ -23,19 +23,11 @@ public class StudentController {
 
     @PostMapping
     public void addStudent(@Valid @RequestBody Student student){
-        if(studentService.isEmailAlreadyUsed(student.getEmail())) {
-            throw new BadRequestException("This email belongs to an existing Student");
-        }else {
-            studentService.addStudent(student);
-        }
+        studentService.addStudent(student);
     }
 
     @DeleteMapping(path="{studentId}")
     public void deleteStudent(@PathVariable("studentId") Long studentId){
-        if(!studentService.doesStudentExist(studentId)) {
-            throw new StudentNotFoundException("Student with id " + studentId + " does not exist Student");
-        }else {
             studentService.deleteStudent(studentId);
-        }
     }
 }
